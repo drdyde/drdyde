@@ -166,8 +166,9 @@
   .photo .frame svg{width:46%;opacity:.5}
   .photo figcaption{color:var(--ink);text-align:center;padding-top:10px;font-family:"Alfa Slab One",Rockwell,serif;font-size:19px;line-height:1.2}
   .photo figcaption small{display:block;font:700 15px "Barlow Condensed",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-top:2px}
-  .photo::before{content:"";position:absolute;top:-12px;left:50%;width:92px;height:26px;margin-left:-46px;
-         background:var(--yellow);opacity:.9;transform:rotate(4deg)}
+  .photo::before{content:"";position:absolute;z-index:2;top:-9px;left:50%;width:24px;height:24px;margin-left:-12px;border-radius:50%;
+         background:radial-gradient(circle at 35% 32%,#ff9a85 0 16%,var(--red) 42%,#7d1d12 100%);box-shadow:2px 4px 0 rgba(0,0,0,.5)}
+  .photo::after{content:"";position:absolute;z-index:1;top:11px;left:50%;width:3px;height:9px;margin-left:-1px;background:#9a948a;border-radius:0 0 2px 2px}
 
   .about{margin-top:44px}
   .about h2{font-size:27px;line-height:1.15}
@@ -259,10 +260,9 @@
     <!-- PHOTO: put photo.jpg next to index.html and uncomment the <img> line -->
     <figure class="photo">
       <div class="frame">
-        <svg viewBox="8 18 224 200" aria-hidden="true"><use href="#face"/></svg>
-        <!-- <img src="photo.jpg" alt="Dr. DyDe"> -->
+        <img src="photo.jpg" width="900" height="900" alt="Dr. DyDe in a knit cap, round glasses and a leather jacket, staring at you next to his own reflection">
       </div>
-      <figcaption><span data-i18n="photo">Doc is busy.</span><small data-i18n="photoSub">Photo later</small></figcaption>
+      <figcaption><span data-i18n="photo">What? 🧐</span><small data-i18n="photoSub">Doc is busy.</small></figcaption>
     </figure>
 
     <!-- LATER: latest YouTube video embed goes here -->
@@ -307,8 +307,8 @@ var I18N = {
     yt: "Main stage",
     tt: "Short cuts",
     tg: "Full versions",
-    photo: "Doc is busy.",
-    photoSub: "Photo later",
+    photo: "What? 🧐",
+    photoSub: "Doc is busy.",
     aboutTitle: "Who is this guy?",
     about: "Silent comedy and dark humor for grown-ups. A tough guy in leather who sings, plays with toys and makes faces. No words. His roommate is a skeleton. Don\'t ask.",
     p1: "No words",
@@ -322,8 +322,8 @@ var I18N = {
     yt: "Escenario principal",
     tt: "Cortes rápidos",
     tg: "Versiones completas",
-    photo: "El Doc está ocupado.",
-    photoSub: "Foto luego",
+    photo: "¿Qué? 🧐",
+    photoSub: "El Doc está ocupado.",
     aboutTitle: "¿Quién es este tipo?",
     about: "Comedia muda y humor negro para adultos. Un tipo duro vestido de cuero que canta, juega con juguetes y hace muecas. Sin palabras. Su compañero de piso es un esqueleto. No preguntes.",
     p1: "Sin palabras",
